@@ -18,6 +18,7 @@ document.querySelector('#dots').addEventListener('change', () => {
   for (let i = 1; i <= dotsAmount; i++){
     const newDot = document.createElement('div');
     newDot.setAttribute('class', 'tempo-pointer');
+    newDot.setAttribute('id', i);
     console.log(newDot);
     console.log(i);
     tempoPointers.appendChild(newDot);
