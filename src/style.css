@@ -12,6 +12,10 @@ section#mentronome{
      padding: 30px;
 }
 
+span{
+     font-size: 24px;
+}
+
 input[type=range]{
      width: 250px;
 }
@@ -20,15 +24,12 @@ input[type=number]{
      width: 90px;
 }
 
-#tempo-pointers{
-     padding: 0 0 28px 0;
+input[type=button]#start-stop{
+     font-size: 20px;
 }
 
-.tempo-pointer{
-     width: 30px;
-     aspect-ratio: 1;
-     border-radius: 50%;
-     background-color: #b83232;
+#tempo-pointers{
+     padding: 0 0 28px 0;
 }
 
 .h20p{height: 20%;}

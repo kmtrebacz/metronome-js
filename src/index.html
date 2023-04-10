@@ -17,21 +17,21 @@
 
                     <h1 class="pb-3">Metronome</h1>
 
-                    <div id="tempo-pointers" class="d-flex justify-content-evenly align-items-center">
-                         <div class="tempo-pointer" id="1"></div>
-                         <div class="tempo-pointer" id="2"></div>
-                         <div class="tempo-pointer" id="3"></div>
-                         <div class="tempo-pointer" id="4"></div>
+				<div id="bpm-display">
+					<span id="tempo">140</span>
+					<span id="bpm">BPM</span>
+				</div>
+
+                    <div id="tempo-settings">
+                         <input type="button" value="-" id="decrease-tempo">
+                         <input type="range" name="" id="" min="20" max="280">
+                         <input type="button" value="+" id="increase-tempo">
                     </div>
 
-                    <input type="range" name="" id="" min="20" max="240">
-                    <h3 id="bmp">BPM</h3>
+                    <input type="button" value="START" id="start-stop">
 
-                    <input type="button" value="START">
-                    <input type="button" value="TAP TEMPO">
-
-                    <input type="number" id="dots" name="" id="" min="1" max="14" value="4">
-                    <input type="number" id="clicks" name="" id="" min="1" max="14" value="4">
+                    <p class="m-0 mt-3">BEATS PER MEASURE</p>
+                    <input type="number" id="clicks" name="" id="" min="1" max="10" value="4">
 
                </div>
 
