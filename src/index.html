@@ -17,21 +17,25 @@
 
                     <h1 class="pb-3">Metronome</h1>
 
-				<div id="bpm-display">
-					<span id="tempo">140</span>
-					<span id="bpm">BPM</span>
-				</div>
+				            <div id="bpm-display">
+					            <span id="tempo">150</span>
+					            <span id="bpm">BPM</span>
+				            </div>
 
                     <div id="tempo-settings">
                          <input type="button" value="-" id="decrease-tempo">
-                         <input type="range" name="" id="" min="20" max="280">
+                         <input type="range" name="" id="slider" min="20" max="280" value="150">
                          <input type="button" value="+" id="increase-tempo">
                     </div>
 
                     <input type="button" value="START" id="start-stop">
-
-                    <p class="m-0 mt-3">BEATS PER MEASURE</p>
-                    <input type="number" id="clicks" name="" id="" min="1" max="10" value="4">
+                    
+                    <div id="measures">
+                      <p class="m-0 mt-3">BEATS PER MEASURE</p>
+                      <input type="button" value="-" id="subtract-beats">
+                      <span id="measure-count">4</span> 
+                      <input type="button" value="+" id="add-beats">
+                    </div>
 
                </div>
 
@@ -40,6 +44,6 @@
      </main>
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-     <script src="./mentronome.js"></script>
+     <script src="./mentronome.js" type="module"></script>
 </body>
 </html>
